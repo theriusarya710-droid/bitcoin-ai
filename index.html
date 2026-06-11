@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Price Predictor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>₿ Bitcoin Price Predictor</h1>
+
+        <p class="subtitle">
+            Prediksi Harga Penutupan Bitcoin Menggunakan Regresi Linear
+        </p>
+
+        <!-- TAMBAHAN -->
+        <div class="info-box">
+            <p><strong>Metode:</strong> Linear Regression</p>
+            <p><strong>Dataset:</strong> Bitcoin Historical Dataset</p>
+            <p><strong>Target Prediksi:</strong> Close Price Bitcoin</p>
+        </div>
+
+        <div class="input-group">
+            <label>Open Price</label>
+            <input type="number" id="open" placeholder="Masukkan Open">
+        </div>
+
+        <div class="input-group">
+            <label>High Price</label>
+            <input type="number" id="high" placeholder="Masukkan High">
+        </div>
+
+        <div class="input-group">
+            <label>Low Price</label>
+            <input type="number" id="low" placeholder="Masukkan Low">
+        </div>
+
+        <div class="input-group">
+            <label>Volume</label>
+            <input type="number" id="volume" placeholder="Masukkan Volume">
+        </div>
+
+<button onclick="predictPrice()">
+    Prediksi Harga
+</button>
+
+<div class="accuracy">
+    Akurasi Model (R²): 99.95%
+</div>
+
+<div class="result" id="result">
+    Hasil prediksi akan muncul di sini
+</div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Tugas Besar Ilmu Data</p>
+    <p>Nama: Liem Arya</p>
+    <p>Metode: Linear Regression</p>
+</footer>
+
+<footer>
+    <p>Tugas Besar Ilmu Data</p>
+    <p>Prediksi Harga Bitcoin Menggunakan Regresi Linear</p>
+    <p>Akurasi Model: 99.95%</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
