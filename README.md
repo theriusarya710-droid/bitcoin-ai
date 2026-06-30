@@ -41,4 +41,4 @@ https://theriusarya710-droid.github.io/bitcoin-ai/
 
 ## Author
 
-Nama: Liem Arya
+Nama: Theryus Arya
